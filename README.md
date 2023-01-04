@@ -218,3 +218,6 @@ footer {
   text-align: center;
 }
 ```
+Result:
+
+![html CssBasic](https://user-images.githubusercontent.com/66148701/210471424-17c45fb3-bf3d-4e52-bc1e-523dc79be8ed.png)
