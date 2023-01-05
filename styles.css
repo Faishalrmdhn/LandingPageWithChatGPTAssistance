@@ -5,13 +5,19 @@ body {
   }
   
   header {
-    background-color: #FFC107;
+    background-image: url('https://dq5r178u4t83b.cloudfront.net/wp-content/uploads/sites/55/2018/08/11090702/hajj-rituals-makkah-accorhotels.jpg'); /* URL gambar */
+    background-size: cover; /* agar gambar menutupi seluruh elemen */
+    background-position: center; /* posisi gambar */
     padding: 20px;
     text-align: center;
+    height: 20rem;
+    filter: brightness(70%);
   }
   
   header h1 {
-    color: white;
+    position: relative; /* tambahkan properti ini */
+    z-index: 10; /* tambahkan properti ini */
+    color: #FFC107;
     font-size: 2em;
     margin: 0;
   }
@@ -43,10 +49,10 @@ body {
   
   main {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column; /* ubah ke column agar element section berurutan dari atas ke bawah */
     align-items: center;
     margin: 20px;
+
   }
   
   section {
