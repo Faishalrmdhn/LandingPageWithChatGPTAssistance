@@ -1,66 +1,95 @@
-/* *,
+*,
 html{
+  font-family: 'PT Sans', sans-serif;
   margin: 0;
   padding: 0;
-} */
+}
 
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
+  } */
   
   header {
-    background-image: url('https://dq5r178u4t83b.cloudfront.net/wp-content/uploads/sites/55/2018/08/11090702/hajj-rituals-makkah-accorhotels.jpg'); /* URL gambar */
-    background-size: cover; /* agar gambar menutupi seluruh elemen */
-    background-position: center; /* posisi gambar */
-    padding: 20px;
+    /* margin-top: 4px; */
+    background-color: red;
+    background-image: url('https://img.freepik.com/free-vector/holy-kaaba-mecca-saudi-arabia-hand-drawn-sketch-vector-illustration_460848-10337.jpg?w=1060&t=st=1673424016~exp=1673424616~hmac=aa6fe1e06bdecf5ce534c28eeb54aa26cfa9ba70ec1fe9bae5b3290dc82538a7');
+    background-size: cover; 
+    background-position: center; 
     text-align: center;
     height: 100vh;
-    /* filter: brightness(70%); */
   }
-  
-  header h1 {
+    header h1 {
     font-family: Aref Ruqaa;
-    position: relative; /* tambahkan properti ini */
-    z-index: 100; /* tambahkan properti ini */
+    text-align: center;
+    position: relative; /*tambahkan properti ini
+    /* z-index: 100; tambahkan properti ini */
     color: #FFC107;
     font-size: 2em;
-    margin: 0; /* warna teks */
-    font-weight: bold; /* tebal teks */
-    text-transform: uppercase; /* huruf besar */
-  }
-  
-  nav {
-    background-color: transparent;
-    font-size: 30px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-  }
-  
-  /* nav ul {
-    display: flex;
-    list-style: none;
     margin: 0;
-    padding: 0;
-  } */
-
-  nav ul li {
-    display: block; /* ubah menjadi block */
-    float: none; /* hilangkan float */
-    text-align: center;
-  }
-
-  nav ul li:not(:first-child) {
-    margin-top: 10px; /* tambahkan margin-top */
+    font-weight: bold; /*tebal teks */
+    text-transform: uppercase; /*huruf besar*/
+    background-color: #333333; 
   }
   
-  nav a {
-    color: white;
+  .nav-container {
+    position: fixed;
+    width: 100%;
+    padding-left: 20px;
+    background-color: #333333;
+    font-size: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0;
+    list-style: none;
+    z-index: 10;
+  }
+
+  .nav-container .nav-brand{
+    float: left;
+  }
+
+  .nav-container .nav-brand a{
     text-decoration: none;
+    color: #FFC107 !important;
+  }
+
+  .nav-container .nav-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-left: auto;
+  }
+
+  .nav-container .nav-list a{
+    font-size: 18px;
+    padding: 0px 30px;
+    color: white;
+    margin-left: auto;
+    text-decoration: none;
+  }
+  
+  .shape-divider {
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .shape-divider svg {
+      position: relative;
+      display: block;
+      width: calc(123% + 1.3px);
+      height: 180px;
+  }
+
+  .shape-divider .shape-fill {
+      fill: #333333;
   }
   
   main {
@@ -73,7 +102,7 @@ body {
   
   section {
     width: 100%;
-    /* padding: 10px; */
+    height: 50rem;
     /* border: 1px solid lightgrey; */
     /* border-radius: 5px; */
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -124,13 +153,13 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
-    height: 50vh;
+    /* height: 50vh; */
     /* padding: 50px; */
   }
   
   section#itinerary {
     height: 50vh;
-    background-image: url('https://images.unsplash.com/photo-1591604145021-d877bc5303a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aXRpbmVyYXJ5JTIwdG8lMjBtZWNjYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+    background-image: url('https://images.unsplash.com/photo-1515854444493-2c337cf5cfd0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     background-size: cover;
     background-position: center;
     color: white;
@@ -138,7 +167,7 @@ body {
   }
   
   section#pricing {
-    background-image: url('https://images.unsplash.com/photo-1650446647974-451d05d2136d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGl0aW5lcmFyeSUyMHRvJTIwbWVjY2F8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+    background-image: url('https://images.unsplash.com/photo-1572252009286-268acec5ca0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     background-size: cover;
     background-position: center;
     color: white;
